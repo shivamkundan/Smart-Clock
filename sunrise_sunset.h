@@ -148,7 +148,7 @@ String calculate_time_diff(time_t epochTime){
 
 	if (epochTime > YESTERDAY.LastLight && epochTime  < TODAY.FirstLight){
 		diff = TODAY.FirstLight - epochTime;
-		suffix=" till first light (1)" + short_time(TODAY.FirstLight);
+		suffix=" till first light" + short_time(TODAY.FirstLight);
 	}
 
 	if (epochTime > TODAY.FirstLight && epochTime  < TODAY.Sunrise) {
@@ -168,7 +168,7 @@ String calculate_time_diff(time_t epochTime){
 
 	if (epochTime > TODAY.LastLight && epochTime<TOMORROW.FirstLight) {
 		diff = TOMORROW.FirstLight - epochTime;
-		suffix=" till first light (2)" + short_time(TOMORROW.FirstLight);
+		suffix=" till first light" + short_time(TOMORROW.FirstLight);
 	}
 
 	uint32_t hours = diff / 3600;

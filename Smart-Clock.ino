@@ -50,14 +50,14 @@ Adafruit_HX8357 tft = Adafruit_HX8357(TFT_CS, TFT_DC, TFT_RST);
 int ALT_TXT_COLOR =HX8357_RED;
 int TXT_COLOR =HX8357_BLACK;
 int BG_COLOR =HX8357_WHITE;
-int pwm_lvl=8000;
+int pwm_lvl=6000;
 
 
 // // Dark mode perfect params
 // int TXT_COLOR =HX8357_RED;
 // int ALT_TXT_COLOR =HX8357_YELLOW;
 // int BG_COLOR =HX8357_BLACK;
-// int pwm_lvl=2000;
+// int pwm_lvl=4000;
 
 
 int DATE_TXT_COLOR=TXT_COLOR;
@@ -469,6 +469,7 @@ void blit_updated_time (int currentHour, int currentMinute, int currentSecond,tm
 		reinit_all_days(epochTime);
 		// testPrint(epochTime);
 		tft.fillRect(0, 115, 480, 45, BG_COLOR);
+		tft.setTextSize(1);
 		tft.setCursor(30, 140);
 		tft.println(calculate_time_diff(epochTime));
 		// Serial.println(calculate_time_diff(epochTime));
