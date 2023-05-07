@@ -46,18 +46,18 @@ Adafruit_HX8357 tft = Adafruit_HX8357(TFT_CS, TFT_DC, TFT_RST);
 
 // ----- THEMES ----- //
 
-// Light mode perfect paramss
-int ALT_TXT_COLOR =HX8357_RED;
-int TXT_COLOR =HX8357_BLACK;
-int BG_COLOR =HX8357_WHITE;
-int pwm_lvl=6000;
+// // Light mode perfect paramss
+// int ALT_TXT_COLOR =HX8357_RED;
+// int TXT_COLOR =HX8357_BLACK;
+// int BG_COLOR =HX8357_WHITE;
+// int pwm_lvl=6000;
 
 
-// // Dark mode perfect params
-// int TXT_COLOR =HX8357_RED;
-// int ALT_TXT_COLOR =HX8357_YELLOW;
-// int BG_COLOR =HX8357_BLACK;
-// int pwm_lvl=4000;
+// Dark mode perfect params
+int TXT_COLOR =HX8357_RED;
+int ALT_TXT_COLOR =HX8357_YELLOW;
+int BG_COLOR =HX8357_BLACK;
+int pwm_lvl=4000;
 
 
 int DATE_TXT_COLOR=TXT_COLOR;
